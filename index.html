@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>NEXVORA AI — Intelligent Tools for Modern Work</title>
+  <meta name="title" content="NEXVORA AI — Intelligent Tools for Modern Work">
+  <meta name="description" content="NEXVORA AI brings intelligent writing, research, document analysis, productivity, and AI workspace tools together in one powerful platform. Intelligence that moves your ideas forward.">
+  <meta name="keywords" content="AI SaaS, Artificial Intelligence, AI Workspace, Document Intelligence, AI Writer, Productivity, Smart Summarizer">
+  <meta name="author" content="NEXVORA AI Inc.">
+  <meta name="theme-color" content="#030712">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nexvora.ai/">
+  <meta property="og:title" content="NEXVORA AI — Intelligent Tools for Modern Work">
+  <meta property="og:description" content="NEXVORA AI brings intelligent writing, research, document analysis, productivity, and AI workspace tools together in one powerful platform.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&h=630&q=80">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nexvora.ai/">
+  <meta property="twitter:title" content="NEXVORA AI — Intelligent Tools for Modern Work">
+  <meta property="twitter:description" content="Write smarter, analyze faster, create effortlessly, and turn complex work into simple results with one intelligent AI workspace.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="sections.css">
+  <link rel="stylesheet" href="dashboard-preview.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Luxury Background Canvas & Glow Elements -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       1. STICKY NAVBAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="NEXVORA AI Homepage">
+        <div class="logo-symbol">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span class="brand-text">NEXVORA <span class="ai-tag">AI</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#tools" class="nav-link">AI Tools</a></li>
+          <li><a href="#workspace" class="nav-link">Workspace</a></li>
+          <li><a href="#demo" class="nav-link">Live Demo</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" data-auth-trigger="signin">Log In</button>
+        <button class="btn btn-primary btn-sm" data-auth-trigger="signup">Get Started</button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div>
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="logo-symbol">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            </svg>
+          </div>
+          <span>NEXVORA <span class="ai-tag">AI</span></span>
+        </div>
+        <button class="btn-icon" id="mobile-drawer-close" aria-label="Close menu" style="background: transparent; border: none; color: #fff; cursor: pointer;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#tools" class="nav-link">AI Tools</a></li>
+        <li><a href="#workspace" class="nav-link">Workspace</a></li>
+        <li><a href="#demo" class="nav-link">Live Demo</a></li>
+        <li><a href="#solutions" class="nav-link">Solutions</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <button class="btn btn-outline" data-auth-trigger="signin" style="width: 100%;">Log In</button>
+      <button class="btn btn-primary" data-auth-trigger="signup" style="width: 100%;">Get Started</button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ========================================================================
+         2. HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <div class="badge badge-glowing">
+                <span class="pulse-dot"></span>
+                <span>Built for modern teams & ambitious creators</span>
+              </div>
+            </div>
+            
+            <h1 class="hero-headline">
+              Your Ideas.<br>
+              <span class="gradient-text-accent">Supercharged by AI.</span>
+            </h1>
+
+            <p class="hero-description">
+              Write smarter, analyze faster, create effortlessly, and turn complex work into simple results with one intelligent AI workspace.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn btn-primary btn-lg" data-auth-trigger="signup">
+                <span>Start Creating</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="#tools" class="btn btn-secondary btn-lg">
+                <span>Explore AI Tools</span>
+              </a>
+            </div>
+
+            <!-- Trust proof badges -->
+            <div class="hero-trust-proof">
+              <div class="avatar-stack">
+                <div class="avatar-fake">ER</div>
+                <div class="avatar-fake">MV</div>
+                <div class="avatar-fake">SC</div>
+                <div class="avatar-fake">DK</div>
+              </div>
+              <div class="hero-rating">
+                <div><span class="stars">★★★★★</span> <strong>4.9 / 5.0</strong> rating</div>
+                <span>Trusted by over 120,000+ creators worldwide</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 2.5D Futuristic AI Interface Visualization -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-dashboard-mockup">
+              
+              <!-- Mockup Bar -->
+              <div class="mockup-window-bar">
+                <div class="window-dots">
+                  <div class="window-dot red"></div>
+                  <div class="window-dot yellow"></div>
+                  <div class="window-dot green"></div>
+                </div>
+                <div class="mockup-status-badge">
+                  <span class="live-dot"></span>
+                  <span>NEXVORA-ULTRA v4.2 • ACTIVE</span>
+                </div>
+              </div>
+
+              <!-- User Query Simulation -->
+              <div class="mockup-user-query">
+                <div class="query-user-icon">U</div>
+                <div class="query-text">
+                  "Analyze our Q4 growth vectors and draft our executive strategic roadmap."
+                </div>
+              </div>
+
+              <!-- AI Processing Response -->
+              <div class="mockup-ai-response">
+                <div class="ai-header-tag">
+                  <span class="ai-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    Cognitive Synthesis Engine
+                  </span>
+                  <span>Latency: 14ms</span>
+                </div>
+                <div class="mockup-response-body">
+                  <p><strong>Synthesizing 42 document vectors across 3 company repositories:</strong></p>
+                  <ul>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span><strong>ARR Velocity:</strong> +34.2% YoY increase driven by automated enterprise licensing.</span>
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span><strong>Executive Roadmap:</strong> 4-phase rollout mapped with vector caching & AES-256 data protection.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Floating Metric Overlay 1 -->
+            <div class="hero-floating-card-1">
+              <div class="metric-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div class="metric-details">
+                <span class="metric-value">+38.4%</span>
+                <span class="metric-label">Productivity Velocity</span>
+              </div>
+            </div>
+
+            <!-- Floating Metric Overlay 2 -->
+            <div class="hero-floating-card-2">
+              <div class="latency-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Inference: <strong>18ms</strong></span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. TRUST / SOCIAL PROOF & STATS
+         ======================================================================== -->
+    <section class="trust-section">
+      <div class="container">
+        <p class="trust-headline">Powering the next generation of intelligent work</p>
+        
+        <!-- Monochrome Partner Logos Wall -->
+        <div class="partners-wall">
+          <div class="partner-logo">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <span>SYNTHETIX</span>
+          </div>
+          <div class="partner-logo">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/></svg>
+            <span>AETHER LABS</span>
+          </div>
+          <div class="partner-logo">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+            <span>QUANTUM SCALE</span>
+          </div>
+          <div class="partner-logo">
+            <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>NEURALFLOW</span>
+          </div>
+          <div class="partner-logo">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z"/></svg>
+            <span>NOVA SYSTEMS</span>
+          </div>
+          <div class="partner-logo">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>CYBERCORE</span>
+          </div>
+        </div>
+
+        <!-- Animated Statistics Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="10" data-suffix="M+">10M+</div>
+            <div class="stat-label">AI Tasks Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="98.7" data-suffix="%" data-decimals="1">98.7%</div>
+            <div class="stat-label">User Satisfaction Rate</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="120" data-suffix="K+">120K+</div>
+            <div class="stat-label">Active Creators & Teams</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="24" data-suffix="/7">24/7</div>
+            <div class="stat-label">Intelligent Assistance</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. AI TOOLS SECTION
+         ======================================================================== -->
+    <section class="section" id="tools">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-violet section-tag">Unified Intelligence Suite</div>
+          <h2>One Platform. <span class="gradient-text-accent">Infinite Possibilities.</span></h2>
+          <p>Everything you need to write, research, analyze, and automate in a single cohesive workspace designed for modern professionals.</p>
+        </div>
+
+        <div class="tools-grid">
+          
+          <!-- Tool 1: AI Writer -->
+          <article class="tool-card">
+            <div>
+              <div class="tool-icon-box icon-blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="tool-title">AI Writer</h3>
+              <p class="tool-description">Create polished, publication-ready content in seconds with multi-tone synthesis, real-time grammar refinement, and brand alignment.</p>
+            </div>
+            <button class="tool-action-btn" data-tool-trigger="writer">
+              <span>Try Tool</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </article>
+
+          <!-- Tool 2: Document Analyzer -->
+          <article class="tool-card">
+            <div>
+              <div class="tool-icon-box icon-violet">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="tool-title">Document Analyzer</h3>
+              <p class="tool-description">Understand 100+ page contracts, financial audits, and technical whitepapers in seconds with contextual semantic chunking.</p>
+            </div>
+            <button class="tool-action-btn" data-tool-trigger="doc-analyzer">
+              <span>Try Tool</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </article>
+
+          <!-- Tool 3: AI Research Assistant -->
+          <article class="tool-card">
+            <div>
+              <div class="tool-icon-box icon-cyan">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <circle cx="11" cy="11" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="tool-title">AI Research Assistant</h3>
+              <p class="tool-description">Turn vast web knowledge and dense proprietary datasets into verified insights, citations, and competitive intelligence matrices.</p>
+            </div>
+            <button class="tool-action-btn" data-tool-trigger="research">
+              <span>Try Tool</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </article>
+
+          <!-- Tool 4: Smart Summarizer -->
+          <article class="tool-card">
+            <div>
+              <div class="tool-icon-box icon-emerald">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="21" y1="10" x2="7" y2="10"></line>
+                  <line x1="21" y1="6" x2="3" y2="6"></line>
+                  <line x1="21" y1="14" x2="3" y2="14"></line>
+                  <line x1="21" y1="18" x2="7" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="tool-title">Smart Summarizer</h3>
+              <p class="tool-description">Convert multi-hour audio recordings, video transcripts, or lengthy threads into concise, decision-ready executive takeaways.</p>
+            </div>
+            <button class="tool-action-btn" data-tool-trigger="summarizer">
+              <span>Try Tool</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </article>
+
+          <!-- Tool 5: Idea Generator -->
+          <article class="tool-card">
+            <div>
+              <div class="tool-icon-box icon-amber">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5.76.76 1.23 1.52 1.41 2.5h6.18z"></path>
+                </svg>
+              </div>
+              <h3 class="tool-title">Idea Generator</h3>
+              <p class="tool-description">Transform abstract thoughts into high-converting product features, campaign themes, and breakthrough creative concepts.</p>
+            </div>
+            <button class="tool-action-btn" data-tool-trigger="idea-gen">
+              <span>Try Tool</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </article>
+
+          <!-- Tool 6: AI Productivity Assistant -->
+          <article class="tool-card">
+            <div>
+              <div class="tool-icon-box icon-magenta">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                  <path d="m9 16 2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="tool-title">AI Productivity Assistant</h3>
+              <p class="tool-description">Organize tasks, schedule focus bands, and automate repetitive cognitive workflows to save hours every single working day.</p>
+            </div>
+            <button class="tool-action-btn" data-tool-trigger="productivity">
+              <span>Try Tool</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. FEATURE SHOWCASE (Alternating Detailed Feature Rows)
+         ======================================================================== -->
+    <section class="section section-alt" id="workspace">
+      <div class="container">
+        
+        <!-- Feature 01: AI Workspace -->
+        <div class="feature-showcase-row">
+          <div class="feature-content">
+            <span class="feature-number">FEATURE 01 — AI WORKSPACE</span>
+            <h2 class="feature-title">One intelligent workspace for everything.</h2>
+            <p class="feature-text">
+              Eliminate browser tab chaos. Manage projects, collaborate on documents, and interact with synchronized AI copilots all in a unified high-performance environment.
+            </p>
+            <ul class="feature-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Real-time cross-project cognitive memory</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Sub-20ms multi-agent coordination</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Role-based team permission controls</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary" data-auth-trigger="signup">Open Workspace Demo →</button>
+          </div>
+
+          <div class="feature-visual">
+            <div class="dashboard-shell">
+              <div class="app-window-header">
+                <div class="window-dots">
+                  <div class="window-dot red"></div>
+                  <div class="window-dot yellow"></div>
+                  <div class="window-dot green"></div>
+                </div>
+                <div class="app-search-bar">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Quick search projects or commands...</span>
+                </div>
+              </div>
+
+              <div class="workspace-container">
+                <!-- Sidebar -->
+                <aside class="workspace-sidebar">
+                  <ul class="sidebar-menu">
+                    <li class="sidebar-item active">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                      <span>Overview</span>
+                    </li>
+                    <li class="sidebar-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                      <span>Projects</span>
+                    </li>
+                    <li class="sidebar-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                      <span>Documents</span>
+                    </li>
+                    <li class="sidebar-item">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                      <span>AI Copilot</span>
+                    </li>
+                  </ul>
+                  <div style="font-size: 0.72rem; color: var(--text-muted); padding: 8px;">
+                    Enterprise Vault • AES-256
+                  </div>
+                </aside>
+
+                <!-- Workspace Main Panel -->
+                <div class="workspace-main">
+                  <div class="workspace-stats-row">
+                    <div class="mini-stat-card">
+                      <div class="mini-stat-title">Tasks Automated</div>
+                      <div class="mini-stat-val">1,842</div>
+                    </div>
+                    <div class="mini-stat-card">
+                      <div class="mini-stat-title">Time Reclaimed</div>
+                      <div class="mini-stat-val">28.4 hrs</div>
+                    </div>
+                    <div class="mini-stat-card">
+                      <div class="mini-stat-title">Accuracy Score</div>
+                      <div class="mini-stat-val" style="color: var(--accent-emerald);">99.4%</div>
+                    </div>
+                  </div>
+
+                  <div class="workspace-projects-list">
+                    <div class="projects-header">
+                      <span>Active Workspace Projects</span>
+                      <span class="project-tag">Live Sync</span>
+                    </div>
+                    <div class="project-item">
+                      <div class="project-info">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <span>Q3 Global Expansion Strategy</span>
+                      </div>
+                      <span style="font-size: 0.78rem; color: var(--text-muted);">Edited 4m ago</span>
+                    </div>
+                    <div class="project-item">
+                      <div class="project-info">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                        <span>Autonomous Contract Risk Audit</span>
+                      </div>
+                      <span style="font-size: 0.78rem; color: var(--text-muted);">Edited 18m ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 02: Document Intelligence -->
+        <div class="feature-showcase-row reverse">
+          <div class="feature-content">
+            <span class="feature-number">FEATURE 02 — DOCUMENT INTELLIGENCE</span>
+            <h2 class="feature-title">Instant clarity from complex documents.</h2>
+            <p class="feature-text">
+              Upload dense PDF reports, spreadsheets, or technical documentation. NEXVORA reads between the lines, extracts verified metrics, and maps citations you can trust.
+            </p>
+            <ul class="feature-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated scanning with radar line verification</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Interactive question answering directly from citations</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Multi-format support (PDF, DOCX, CSV, Markdown)</span>
+              </li>
+            </ul>
+            <button class="btn btn-secondary" data-tool-trigger="doc-analyzer">Explore Document Scanner →</button>
+          </div>
+
+          <div class="feature-visual">
+            <div class="dashboard-shell">
+              <div class="app-window-header">
+                <div class="window-dots">
+                  <div class="window-dot red"></div>
+                  <div class="window-dot yellow"></div>
+                  <div class="window-dot green"></div>
+                </div>
+                <!-- Document Switcher Tabs -->
+                <div class="tab-group" style="padding: 2px;">
+                  <button class="tab-btn doc-tab-btn active" data-doc="report">Finance</button>
+                  <button class="tab-btn doc-tab-btn" data-doc="roadmap">Roadmap</button>
+                  <button class="tab-btn doc-tab-btn" data-doc="compliance">Compliance</button>
+                </div>
+              </div>
+
+              <div class="doc-intelligence-container">
+                <!-- Document Viewer -->
+                <div class="doc-viewer-card">
+                  <div class="doc-scanner-line"></div>
+                  <div style="font-size: 0.78rem; font-weight: 700; color: #fff; margin-bottom: 6px;" id="doc-preview-title">
+                    Q4_Enterprise_Financial_Audit.pdf
+                  </div>
+                  <div style="font-size: 0.7rem; color: var(--text-dim); margin-bottom: 14px;" id="doc-preview-meta">
+                    4.8 MB • 32 pages
+                  </div>
+                  <div class="doc-text-mock" id="doc-preview-text">
+                    ...operating revenue reached <strong>$42.8M</strong>, reflecting a <span class="doc-highlight">34.2% Year-over-Year growth</span> driven by expanded corporate SaaS licensing. Gross profit margin settled at <strong>78.4%</strong>. Operating expenses were optimized through automated workflow adoption, reducing administrative overhead by 22%...
+                  </div>
+                </div>
+
+                <!-- Analysis Panel -->
+                <div class="doc-analysis-panel">
+                  <div style="font-size: 0.85rem; font-weight: 700; color: #fff;">
+                    Extracted Insights & Entities
+                  </div>
+                  <div class="analysis-badge-list" id="doc-entities-wrap">
+                    <span class="badge badge-cyan" style="font-size: 0.72rem; padding: 3px 8px;">ARR: $42.8M</span>
+                    <span class="badge badge-cyan" style="font-size: 0.72rem; padding: 3px 8px;">Margin: 78.4%</span>
+                    <span class="badge badge-cyan" style="font-size: 0.72rem; padding: 3px 8px;">Growth: +34.2%</span>
+                  </div>
+
+                  <div id="doc-insights-list" style="display: flex; flex-direction: column; gap: 8px;">
+                    <div class="analysis-key-point">
+                      Net Operating Cash Flow increased by $6.4M in Q4.
+                    </div>
+                    <div class="analysis-key-point">
+                      SaaS Gross Margin stands at an elite 78.4%.
+                    </div>
+                  </div>
+
+                  <!-- Ask AI Input -->
+                  <div style="display: flex; gap: 6px; margin-top: auto;">
+                    <input type="text" id="doc-search-input" class="form-input" placeholder="Ask anything about this document..." style="padding: 8px 12px; font-size: 0.82rem;">
+                    <button class="btn btn-primary btn-sm" id="doc-search-btn">Ask</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 03: AI Writing Studio -->
+        <div class="feature-showcase-row">
+          <div class="feature-content">
+            <span class="feature-number">FEATURE 03 — AI WRITING STUDIO</span>
+            <h2 class="feature-title">Write at the speed of thought.</h2>
+            <p class="feature-text">
+              Transform rough outlines into captivating articles, investor briefings, and marketing copy. Fine-tune voice, cadence, and tone with intelligent autocomplete.
+            </p>
+            <ul class="feature-highlights-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Live tone shift (Executive, Technical, Persuasive)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>One-click semantic rewriting & simplification</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Real-time readability and engagement scoring</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary" data-tool-trigger="writer">Launch Writer Studio →</button>
+          </div>
+
+          <div class="feature-visual">
+            <div class="dashboard-shell">
+              <div class="app-window-header">
+                <div class="window-dots">
+                  <div class="window-dot red"></div>
+                  <div class="window-dot yellow"></div>
+                  <div class="window-dot green"></div>
+                </div>
+                <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan-light);">
+                  Active Document: Strategic_Overview.md
+                </div>
+              </div>
+
+              <div class="editor-container">
+                <div class="editor-toolbar">
+                  <button class="editor-tool-btn active">Bold</button>
+                  <button class="editor-tool-btn">Italic</button>
+                  <button class="editor-tool-btn">H2</button>
+                  <button class="editor-tool-btn">Bullet</button>
+                  <span style="height: 16px; width: 1px; background: var(--border-subtle);"></span>
+                  <span style="font-size: 0.8rem; color: var(--text-muted);">Tone: <strong>Executive</strong></span>
+                </div>
+
+                <div class="editor-content-area" id="editor-live-content">
+                  <strong>NEXVORA AI</strong> streamlines enterprise workflows by merging vector search with generative synthesis, achieving measurable <strong>3.4x efficiency improvements</strong> across all technical documentation.
+                </div>
+
+                <div class="editor-suggestion-box">
+                  <div class="suggestion-text">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="vertical-align: middle; margin-right: 4px;">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    AI Suggestion: Rephrase opening for higher persuasive impact.
+                  </div>
+                  <button class="btn btn-sm btn-primary" id="btn-editor-rewrite" style="padding: 4px 12px; font-size: 0.78rem;">
+                    Apply Rewrite
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. INTERACTIVE AI DEMO
+         ======================================================================== -->
+    <section class="section" id="demo">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-glowing section-tag">Live Interactive Simulation</div>
+          <h2>Experience the <span class="gradient-text-accent">Intelligence.</span></h2>
+          <p>Try prompt presets or type your own request to witness the speed, nuance, and structural precision of the Nexvora neural pipeline.</p>
+        </div>
+
+        <div class="demo-section-box">
+          <!-- Header Bar -->
+          <div class="demo-header-bar">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div class="window-dots">
+                <div class="window-dot red"></div>
+                <div class="window-dot yellow"></div>
+                <div class="window-dot green"></div>
+              </div>
+              <span style="font-size: 0.85rem; font-weight: 600; color: #fff; margin-left: 8px;">NEXVORA Cognitive Sandbox</span>
+            </div>
+            <div class="badge badge-glowing" style="font-size: 0.72rem; padding: 3px 10px;">
+              <span class="pulse-dot"></span>
+              <span>Model: Nexvora-Ultra 4.2</span>
+            </div>
+          </div>
+
+          <!-- Prompt Preset Chips -->
+          <div class="demo-prompt-pills" role="tablist">
+            <button class="prompt-pill active" data-preset="plan">Project Plan</button>
+            <button class="prompt-pill" data-preset="brief">Executive Brief</button>
+            <button class="prompt-pill" data-preset="finance">Financial Audit</button>
+            <button class="prompt-pill" data-preset="marketing">Growth Hooks</button>
+          </div>
+
+          <!-- Chat Body Area -->
+          <div class="demo-chat-body" id="demo-chat-body" aria-live="polite">
+            <!-- Dynamically populated by js/ai-demo.js -->
+          </div>
+
+          <!-- Interactive Input Bar -->
+          <div class="demo-input-bar">
+            <input 
+              type="text" 
+              id="demo-input" 
+              class="demo-input-box" 
+              placeholder="Ask NEXVORA AI anything (e.g. Outline our cloud security strategy)..."
+              aria-label="Ask NEXVORA AI anything"
+            >
+            <button class="btn btn-primary" id="demo-send-btn" aria-label="Send prompt">
+              <span>Send</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. ANALYTICS & DASHBOARD METRICS
+         ======================================================================== -->
+    <section class="section section-alt" id="analytics">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-cyan section-tag">Enterprise Telemetry</div>
+          <h2>Measurable Productivity. <span class="gradient-text-accent">Unmatched ROI.</span></h2>
+          <p>Real-time analytics monitor model usage, task execution velocity, and total engineering hours saved across all active workspaces.</p>
+        </div>
+
+        <div class="analytics-cards-grid">
+          
+          <!-- Interactive SVG Chart Panel -->
+          <div class="analytics-chart-panel">
+            <div class="chart-header">
+              <div class="chart-title-wrap">
+                <h3>Autonomous Task Velocity</h3>
+                <div class="chart-subtitle">Tasks completed with sub-20ms latency</div>
+              </div>
+              <div class="tab-group" style="padding: 2px;">
+                <button class="tab-btn chart-time-btn active" data-time="weekly">Weekly</button>
+                <button class="tab-btn chart-time-btn" data-time="monthly">Monthly</button>
+              </div>
+            </div>
+
+            <!-- SVG Chart with hover tooltip -->
+            <div class="interactive-chart-wrap">
+              <div class="chart-tooltip" id="chart-tooltip"></div>
+              <svg 
+                id="analytics-svg" 
+                class="interactive-chart-svg" 
+                viewBox="0 0 600 200" 
+                preserveAspectRatio="none"
+              >
+                <!-- Rendered dynamically by js/analytics-chart.js -->
+              </svg>
+            </div>
+          </div>
+
+          <!-- Progress Metrics Column -->
+          <div class="analytics-metrics-col">
+            
+            <div class="metric-bar-card">
+              <div class="metric-bar-header">
+                <span class="bar-title">Hours Reclaimed</span>
+                <span class="bar-val">142.6 hrs</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-bar-card">
+              <div class="metric-bar-header">
+                <span class="bar-title">Inference Accuracy</span>
+                <span class="bar-val">99.4%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill violet" style="width: 94%;"></div>
+              </div>
+            </div>
+
+            <div class="metric-bar-card">
+              <div class="metric-bar-header">
+                <span class="bar-title">Cloud Compute Saved</span>
+                <span class="bar-val">68.2%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill emerald" style="width: 86%;"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         8. SOLUTIONS SECTION
+         ======================================================================== -->
+    <section class="section" id="solutions">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-violet section-tag">Tailored Intelligence</div>
+          <h2>Engineered for Every <span class="gradient-text-accent">Ambitious Mind.</span></h2>
+          <p>From individual researchers to global enterprise teams, NEXVORA adapts to your unique workflow demands.</p>
+        </div>
+
+        <div class="solutions-grid">
+          
+          <!-- Students -->
+          <div class="solution-card">
+            <span class="solution-badge" style="color: var(--accent-cyan-light);">Academics & Research</span>
+            <h3 class="solution-title">Students</h3>
+            <p class="solution-description">Summarize dense academic papers, extract verified citations, and structure research theses in a fraction of the time.</p>
+            <ul class="solution-benefits">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated literature reviews</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Instant citation formatting</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Complex concept breakdown</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Creators -->
+          <div class="solution-card">
+            <span class="solution-badge" style="color: var(--accent-violet-light);">Media & Storytelling</span>
+            <h3 class="solution-title">Creators</h3>
+            <p class="solution-description">Generate viral hooks, draft high-converting newsletters, and repurpose long-form video transcripts into engaging social content.</p>
+            <ul class="solution-benefits">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Multi-platform copy generator</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dynamic creative brainstorming</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Brand voice personalization</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Professionals -->
+          <div class="solution-card">
+            <span class="solution-badge" style="color: var(--accent-blue-light);">High-Leverage Work</span>
+            <h3 class="solution-title">Professionals</h3>
+            <p class="solution-description">Automate repetitive intellectual tasks, formulate data-backed executive briefs, and master decision velocity.</p>
+            <ul class="solution-benefits">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Contract & RFP parsing</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Meeting transcript distillation</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Executive deck structuring</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Businesses -->
+          <div class="solution-card">
+            <span class="solution-badge" style="color: var(--accent-emerald);">Scale & Governance</span>
+            <h3 class="solution-title">Businesses</h3>
+            <p class="solution-description">Empower your entire workforce with enterprise security, dedicated fine-tuned models, and single sign-on compliance.</p>
+            <ul class="solution-benefits">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>SOC2 & HIPAA compliant vaults</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Custom private LLM hosting</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Multi-seat admin telemetry</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         9. PRICING SECTION
+         ======================================================================== -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-glowing section-tag">Transparent Investment</div>
+          <h2>Invest in <span class="gradient-text-accent">Pure Productivity.</span></h2>
+          <p>Choose the plan tailored to your scale. Upgrade, downgrade, or cancel anytime with zero lock-in.</p>
+        </div>
+
+        <!-- Monthly / Annual Toggle -->
+        <div class="pricing-toggle-wrap">
+          <span class="billing-label" id="label-monthly">Monthly</span>
+          <div class="toggle-switch annual" id="pricing-toggle" role="switch" aria-checked="true" aria-label="Toggle Annual Billing">
+            <div class="toggle-knob"></div>
+          </div>
+          <span class="billing-label active" id="label-annual">
+            Annual Billed
+          </span>
+          <span class="discount-tag">Save 20%</span>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+          
+          <!-- Starter Plan -->
+          <div class="pricing-card">
+            <div>
+              <h3 class="plan-name">Starter</h3>
+              <p class="plan-description">For individuals exploring the frontier of intelligent productivity.</p>
+              <div class="plan-price-wrap">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="price-starter">15</span>
+                <span class="price-period">/month, billed annually</span>
+              </div>
+              <ul class="plan-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>500,000 monthly generation tokens</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Document analysis up to 25MB</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Full access to 6 AI core tools</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Standard inference speed (45ms)</span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary plan-select-btn" data-plan="Starter">Start Free Trial</button>
+          </div>
+
+          <!-- Pro Plan (Most Popular) -->
+          <div class="pricing-card popular">
+            <div class="popular-badge-wrap">
+              <span class="badge badge-popular">MOST POPULAR</span>
+            </div>
+            <div>
+              <h3 class="plan-name">Pro</h3>
+              <p class="plan-description">For serious creators and high-velocity professionals demanding peak speed.</p>
+              <div class="plan-price-wrap">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="price-pro">39</span>
+                <span class="price-period">/month, billed annually</span>
+              </div>
+              <ul class="plan-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Unlimited</strong> AI token generations</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Document analysis up to 250MB (PDF/CSV)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Ultra-low latency Tier-1 priority (sub-18ms)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Semantic memory across all projects</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Priority 24/7 dedicated support</span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-primary plan-select-btn" data-plan="Pro">Upgrade to Pro →</button>
+          </div>
+
+          <!-- Business Plan -->
+          <div class="pricing-card">
+            <div>
+              <h3 class="plan-name">Business</h3>
+              <p class="plan-description">For teams and organizations requiring enterprise-grade security and shared memory.</p>
+              <div class="plan-price-wrap">
+                <span class="price-currency">$</span>
+                <span class="price-amount" id="price-business">99</span>
+                <span class="price-period">/month, billed annually</span>
+              </div>
+              <ul class="plan-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Includes 5 team member seats</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Private vector enclave with zero data training</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Custom fine-tuned tone models</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>SSO, SAML & SOC2 Type II compliance</span>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary plan-select-btn" data-plan="Business">Contact Sales</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         10. TESTIMONIALS
+         ======================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-cyan section-tag">Verified Experiences</div>
+          <h2>Loved by Teams at the <span class="gradient-text-accent">Bleeding Edge.</span></h2>
+          <p>Read how industry leaders are redefining their daily output with NEXVORA AI.</p>
+        </div>
+
+        <div class="testimonials-wrapper">
+          <div class="testimonials-track" id="testimonials-track">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="stars-rating">★★★★★</div>
+                <blockquote class="testimonial-quote">
+                  “NEXVORA AI completely transformed the way our executive team handles research and technical synthesis. What used to demand 6 hours of manual spreadsheet audits now resolves in under 30 seconds.”
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background: linear-gradient(135deg, #3b82f6, #60a5fa);">ER</div>
+                  <div>
+                    <div class="author-name">Elena Rostova</div>
+                    <div class="author-role">VP of Product • Synthetix Global</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="stars-rating">★★★★★</div>
+                <blockquote class="testimonial-quote">
+                  “The Document Intelligence analyzer is legitimately light years ahead of any generic chat wrapper. It pinpointed contract indemnity discrepancies our legal auditors missed on first pass.”
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background: linear-gradient(135deg, #8b5cf6, #c084fc);">MV</div>
+                  <div>
+                    <div class="author-name">Marcus Vance</div>
+                    <div class="author-role">Head of Research • Horizon BioLabs</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="stars-rating">★★★★★</div>
+                <blockquote class="testimonial-quote">
+                  “As an engineer, I care about latency and context preservation. NEXVORA delivers sub-20ms semantic responses without hallucinating. It has become our primary engineering copilot.”
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background: linear-gradient(135deg, #06b6d4, #22d3ee);">SC</div>
+                  <div>
+                    <div class="author-name">Sarah Chen</div>
+                    <div class="author-role">Principal Systems Architect • Veloce Cloud</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="stars-rating">★★★★★</div>
+                <blockquote class="testimonial-quote">
+                  “The ROI is undeniable. Across our 40-person investment committee, we have reclaimed over 120 combined hours every week. This is what future software should feel like.”
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="author-avatar" style="background: linear-gradient(135deg, #ec4899, #f472b6);">DK</div>
+                  <div>
+                    <div class="author-name">David K. Miller</div>
+                    <div class="author-role">Managing Director • Apex Capital Partners</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button class="btn btn-secondary btn-icon" id="carousel-prev" aria-label="Previous testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-dot-group">
+              <button class="carousel-dot active" aria-label="Slide 1"></button>
+              <button class="carousel-dot" aria-label="Slide 2"></button>
+              <button class="carousel-dot" aria-label="Slide 3"></button>
+              <button class="carousel-dot" aria-label="Slide 4"></button>
+            </div>
+            <button class="btn btn-secondary btn-icon" id="carousel-next" aria-label="Next testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         11. FAQ ACCORDION
+         ======================================================================== -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="badge badge-violet section-tag">Clarity & Answers</div>
+          <h2>Frequently Asked <span class="gradient-text-accent">Questions.</span></h2>
+          <p>Everything you need to know about NEXVORA AI tools, infrastructure, data safety, and pricing.</p>
+        </div>
+
+        <div class="faq-wrap">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is NEXVORA AI?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              NEXVORA AI is an ultra-premium, all-in-one AI productivity platform that combines intelligent writing assistance, deep document analysis, autonomous research, and dynamic workspace collaboration into a single, unified interface.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What can I use the AI tools for?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              You can draft long-form articles, parse complex financial or legal documents, generate structured project blueprints, conduct multi-source academic research, distill meeting transcripts, and optimize your team’s weekly task execution schedule.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is there a free trial or starter tier?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes! We offer a 14-day free trial on all plans with full access to our core intelligence engine, document analyzer, and workspace tools. No credit card is required to begin experimenting with the sandbox.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can teams collaborate together in NEXVORA AI?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Absolutely. Our Business and Enterprise tiers feature shared project memory, cross-document vector indexing, granular role-based permissions, and centralized admin billing dashboards.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are my documents and corporate data secure?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              We take enterprise privacy with paramount seriousness. All document uploads and vector embeddings are secured via AES-256 at rest and TLS 1.3 in transit. We maintain strict SOC2 compliance, and your proprietary data is never used to train public models.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I cancel or modify my plan anytime?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes. You can switch between monthly and annual billing or cancel your subscription at any time directly from your account settings with a single click. There are no cancellation penalties or hidden fees.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         12. FINAL DRAMATIC CTA
+         ======================================================================== -->
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-glow-orb"></div>
+          <div class="cta-content">
+            <div class="badge badge-glowing" style="margin-bottom: 24px;">
+              <span class="pulse-dot"></span>
+              <span>Next Generation Productivity</span>
+            </div>
+            <h2 class="cta-headline">Build Faster. Think Smarter. <span class="gradient-text-accent">Create More.</span></h2>
+            <p class="cta-subtitle">
+              Everything you need to turn abstract ideas into intelligent, verified results. Join over 120,000 creators accelerating their output today.
+            </p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+              <button class="btn btn-primary btn-lg" data-auth-trigger="signup">
+                <span>Start Your AI Journey</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+              <a href="#demo" class="btn btn-secondary btn-lg">Watch Interactive Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       13. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo" style="margin-bottom: 14px;">
+            <div class="logo-symbol">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+              </svg>
+            </div>
+            <span class="brand-text">NEXVORA <span class="ai-tag">AI</span></span>
+          </a>
+          <p class="footer-description">
+            Intelligence that moves your ideas forward. Unified AI tools, document intelligence, and synchronized workspaces engineered for modern teams.
+          </p>
+          <div class="footer-status-pill">
+            <span class="pulse-dot" style="background: var(--accent-emerald);"></span>
+            <span>All Global Neural Clusters Operational</span>
+          </div>
+        </div>
+
+        <!-- Product Col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Product</h4>
+          <ul class="footer-nav">
+            <li><a href="#tools">AI Tools</a></li>
+            <li><a href="#workspace">Workspace</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#demo">Live Demo</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-nav">
+            <li><a href="#docs" data-tool-trigger="writer">Documentation</a></li>
+            <li><a href="#help" data-auth-trigger="signin">Help Center</a></li>
+            <li><a href="#blog" data-tool-trigger="research">Engineering Blog</a></li>
+            <li><a href="#guides" data-tool-trigger="doc-analyzer">Research Guides</a></li>
+            <li><a href="#api" data-auth-trigger="signup">API Status</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-nav">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers <span class="badge badge-popular" style="font-size: 0.65rem; padding: 2px 6px;">Hiring</span></a></li>
+            <li><a href="#contact" data-auth-trigger="signin">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Stay Connected</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">
+            Get the latest updates on autonomous AI models and product features.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input 
+              type="email" 
+              id="newsletter-email" 
+              class="newsletter-input" 
+              placeholder="Enter your work email..." 
+              required
+              aria-label="Email address for newsletter"
+            >
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>© 2026 NEXVORA AI Inc. All rights reserved. Built with precision and care.</div>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.59 1.59 0 1 0 0 3.18 1.59 1.59 0 0 0 0-3.18z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Discord">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       14. AUTH MODAL (Sign In / Sign Up)
+       ======================================================================== -->
+  <div class="modal-overlay" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close modal">×</button>
+      
+      <div class="modal-header">
+        <h3 class="modal-title" id="auth-modal-title">Welcome Back to NEXVORA</h3>
+        <p class="modal-subtitle" id="auth-modal-subtitle">Enter your credentials to access your intelligent workspace.</p>
+      </div>
+
+      <!-- Social Auth Quick Connect -->
+      <div class="social-auth-grid">
+        <button class="btn btn-secondary social-auth-btn" data-provider="Google" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          <span>Google</span>
+        </button>
+        <button class="btn btn-secondary social-auth-btn" data-provider="GitHub" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <span>GitHub</span>
+        </button>
+      </div>
+
+      <div class="auth-divider">or continue with email</div>
+
+      <form id="auth-modal-form">
+        <!-- Extra field for sign up -->
+        <div id="signup-extra-fields" style="display: none;">
+          <div class="form-group">
+            <label class="form-label" for="auth-name">Full Name</label>
+            <input type="text" id="auth-name" class="form-input" placeholder="Elena Rostova">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="auth-email">Work Email</label>
+          <input type="email" id="auth-email" class="form-input" placeholder="name@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label class="form-label" for="auth-password">Password</label>
+            <a href="#" style="font-size: 0.78rem; color: var(--accent-blue-light);" onclick="if(window.showToast) window.showToast('Password Reset', 'Password recovery instructions sent to your email.', 'info'); return false;">Forgot?</a>
+          </div>
+          <input type="password" id="auth-password" class="form-input" placeholder="••••••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="auth-submit-btn" style="width: 100%; margin-top: 10px;">
+          Log In to Workspace →
+        </button>
+      </form>
+
+      <div class="modal-footer">
+        <span id="auth-toggle-prompt">Don't have an account?</span>
+        <a href="#" id="auth-toggle-link">Sign Up for Free</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       15. "TRY TOOL" INTERACTIVE PLAYGROUND MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="tool-modal" role="dialog" aria-modal="true" aria-labelledby="sandbox-tool-title">
+    <div class="modal-dialog" style="max-width: 650px;">
+      <button class="modal-close" aria-label="Close modal">×</button>
+      
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <h3 class="modal-title" id="sandbox-tool-title" style="margin: 0; font-size: 1.4rem;">AI Writer Studio</h3>
+          <span class="badge badge-glowing" id="sandbox-tool-badge" style="font-size: 0.72rem; padding: 2px 8px;">Content Engine</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sandbox-tool-input">Enter Input Prompt</label>
+        <textarea 
+          id="sandbox-tool-input" 
+          class="form-textarea" 
+          rows="3" 
+          placeholder="Enter prompt to run through this AI tool..."
+        ></textarea>
+      </div>
+
+      <button class="btn btn-primary btn-sm" id="sandbox-run-btn" style="margin-bottom: 20px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <span>Run AI Tool</span>
+      </button>
+
+      <div style="background: rgba(6, 12, 28, 0.85); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 18px; min-height: 140px;">
+        <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">
+          Generated Output
+        </div>
+        <div id="sandbox-tool-output">
+          <span style="color: var(--text-dim); font-style: italic;">Your generated results will appear here...</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; display: flex; justify-content: flex-end;">
+        <button class="btn btn-secondary btn-sm modal-backdrop-dismiss">Close Sandbox</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="toast.js"></script>
+  <script src="particles.js"></script>
+  <script src="ai-demo.js"></script>
+  <script src="doc-intelligence.js"></script>
+  <script src="analytics-chart.js"></script>
+  <script src="pricing.js"></script>
+  <script src="modals.js"></script>
+  <script src="testimonials.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
